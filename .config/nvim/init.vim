@@ -1,8 +1,15 @@
-set tabstop=4
 set number
-set shiftwidth=4
-set autoindent
-syntax on
+set title
+set showmatch
+
+filetype on
+
+syntax enable 
+
+set tabstop=2
+set shiftwidth=2
+set smartindent
+
 
 " reset augroup
 augroup MyAutoCmd
@@ -25,3 +32,4 @@ endfunction
 
 call s:load('plugins')
 
+autocmd BufNewFile,BufRead *.cpp setfiletype cpp
