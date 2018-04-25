@@ -1,15 +1,18 @@
+set backspace=indent,eol,start
+set cursorline
 set number
+set list
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+set whichwrap=b,s,[,],<,>
+set tabstop=2
 set title
+set shiftwidth=2
+set smartindent
 set showmatch
 
 filetype on
 
-syntax enable 
-
-set tabstop=2
-set shiftwidth=2
-set smartindent
-
+syntax enable
 
 " reset augroup
 augroup MyAutoCmd

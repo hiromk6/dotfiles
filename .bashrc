@@ -118,3 +118,6 @@ fi
 
 export XDG_CONFIG_HOME=~/.config
 export XDG_DATA_HOME=~/.local/share
+export PYENV_ROOT="${HOME}/.pyenv"
+export PATH="${PYENV_ROOT}/bin:$PATH"
+eval "$(pyenv init -)"
